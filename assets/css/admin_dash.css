@@ -1,0 +1,251 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f7f9;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #111;
+  color: #fff;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar .logo h2 {
+  color: limegreen;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.admin-profile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.admin-profile p {
+  margin: 0.3rem 0;
+}
+
+.admin-role {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 1rem 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav-menu li.active a,
+.nav-menu li a:hover {
+  background-color: limegreen;
+  color: #000;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-container input {
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  border: 1.5px solid #ccc;
+  width: 200px;
+  transition: border 0.3s;
+}
+
+.search-container input:focus {
+  border-color: limegreen;
+  outline: none;
+}
+
+.search-container button {
+  padding: 0.6rem 1rem;
+  background-color: limegreen;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-container button:hover {
+  background-color: #32cd32;
+}
+
+/* Notification and time */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.notification {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background: url('https://img.icons8.com/material-outlined/24/000000/bell--v1.png') no-repeat center;
+  background-size: contain;
+}
+
+.notification-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.date-time {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Content sections */
+.content-section {
+  margin-bottom: 3rem;
+}
+
+.content-section h2 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.stat-card {
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.stat-card h3 {
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: limegreen;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+table th, table td {
+  padding: 0.9rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+table th {
+  background-color: #f3f3f3;
+  font-weight: bold;
+  color: #333;
+}
+
+table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.flagged {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 1rem;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

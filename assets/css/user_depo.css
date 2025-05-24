@@ -1,0 +1,118 @@
+/* Form Card Styling */
+.form-card {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  max-width: 500px;
+  margin-top: 1rem;
+}
+
+.form-card label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.form-card button {
+  background-color: limegreen;
+  color: black;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-card button:hover {
+  background-color: #000;
+  color: limegreen;
+}
+
+/* Alerts */
+.success {
+  background-color: #e7fce9;
+  color: green;
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.error {
+  background-color: #ffe6e6;
+  color: red;
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* Container to hold sidebar and main content */
+.container {
+  display: flex;
+  height: 100vh; /* full viewport height */
+  overflow: hidden;
+}
+
+/* SIDEBAR Full Styling */
+.sidebar {
+  width: 220px;
+  background-color: #000;
+  color: white;
+  padding: 2rem 1rem;
+  height: 100vh;  /* full viewport height */
+  flex-shrink: 0;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1000;
+}
+
+.sidebar h2 {
+  color: limegreen;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar ul li a {
+  display: block;
+  background-color: limegreen;
+  color: black;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #000;
+  color: limegreen;
+  border: 1px solid limegreen;
+}
+
+/* Main content area takes the rest of the space */
+.main-content {
+  flex-grow: 1;          /* fills remaining horizontal space */
+  padding: 2rem;
+  overflow-y: auto;      /* scroll vertically if content overflows */
+  box-sizing: border-box;
+  background-color: #f5f5f5; /* example background */
+}

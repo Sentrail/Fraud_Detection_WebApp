@@ -1,0 +1,186 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.landing-header {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: limegreen;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: limegreen;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, limegreen, #2196f3);
+  color: #fff;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: limegreen;
+  color: #000;
+}
+
+/* Features Section */
+.features {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.features h2 {
+  color: #000;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.features ul {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.features li {
+  margin: 0.8rem 0;
+  font-size: 1.1rem;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #fff;
+  color: #111;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .landing-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .features h2,
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .features li {
+    font-size: 1rem;
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar nav a {
+    margin: 0.5rem 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  table th, table td {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}

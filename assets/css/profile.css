@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.profile-header {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-actions a {
+    display: inline-block;
+    margin: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.profile-actions a.danger {
+    color: red;
+}
+
+.transactions table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.transactions th, .transactions td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.transactions th {
+    background-color: #eee;
+}

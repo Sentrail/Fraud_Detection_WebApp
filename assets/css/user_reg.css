@@ -1,0 +1,176 @@
+/* Registration Page */
+/* Body and overall background */
+body {
+  background: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header styling */
+.landing-header {
+  background-color: #222;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing-header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: limegreen;
+}
+
+.landing-header nav a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.landing-header nav a:hover {
+  color: limegreen;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #000;
+  font-size: 2rem;
+  align-self: center;
+}
+
+/* Form Styling */
+form {
+  background-color: #f9f9f9;
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+  max-width: 600px;
+  width: 100%;
+  align-self: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #000;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #000;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid #2196f3;
+  outline: none;
+}
+
+/* Button */
+button[type="submit"] {
+  background-color: limegreen;
+  color: black;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #000;
+  color: limegreen;
+}
+
+/* Message & Link */
+p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  align-self: center;
+}
+
+a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Error/Success */
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.success {
+  color: limegreen;
+  margin-bottom: 1rem;
+}
+
+/* Contact section styling */
+.contact {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+}
+
+/* Footer styling */
+footer {
+  background-color: #111;
+  color: #777;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  user-select: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .login-container {
+    margin: 2rem 1rem;
+    padding: 2rem 1.5rem;
+  }
+
+  .landing-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .landing-header nav {
+    margin-top: 0.5rem;
+  }
+
+  .landing-header nav a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
